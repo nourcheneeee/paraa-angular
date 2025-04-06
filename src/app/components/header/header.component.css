@@ -1,0 +1,60 @@
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #638c65;
+    padding: 15px 40px;
+    color: white;
+    height: 100px;
+  }
+  
+  /* Logo styling */
+  img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 10px;
+  }
+  
+  /* Navigation menu */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* More space between links */
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem; /* Bigger links */
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #386355; /* Baby blue hover effect */
+  }
+  
+  /* Icons */
+  .icons {
+    display: flex;
+    gap: 20px; /* Space between icons */
+  }
+  
+  .icons span {
+    font-size: 1.3rem; /* Bigger icons */
+    color: white; /* White icons */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .icons span:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+  }
+  
