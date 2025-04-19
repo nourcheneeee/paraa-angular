@@ -1,0 +1,62 @@
+<section class="about">
+    <h2>À propos de PARA-dis</h2>
+    <p class="intro">
+      Bienvenue chez PARA-dis, votre parapharmacie de confiance dédiée à votre bien-être.  
+      Depuis notre création, nous nous engageons à offrir des produits de qualité, sélectionnés avec soin,
+      pour répondre aux besoins de toute la famille.
+    </p>
+  
+    <div class="about-content">
+            <iframe
+              class="about-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9518889828635!2d10.166191614671389!3d36.806494379951735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1302c94d0875975f%3A0x36e507f0e87c3f6f!2sTunis%2C%20Tunisie!5e0!3m2!1sfr!2stn!4v1713099581234!5m2!1sfr!2stn"
+              width="350"
+              height="250"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+      <div class="about-text">
+        <h3>Notre Mission</h3>
+        <p>
+          Offrir des produits sûrs, efficaces et accessibles, tout en vous accompagnant avec des conseils
+          professionnels pour une meilleure santé au quotidien.
+        </p>
+  
+        <h3>Pourquoi nous choisir ?</h3>
+        <ul>
+          <li>Produits certifiés et testés dermatologiquement</li>
+          <li>Livraison gratuite à partir de 50€</li>
+          <li>Service client disponible 24h/24</li>
+          <li>Satisfait ou remboursé</li>
+        </ul>
+  
+        <h3>Contactez-nous</h3>
+        <p>
+          Une question ? Un besoin spécifique ? Notre équipe est à votre écoute !  
+          Vous pouvez nous joindre via notre page de contact ou sur nos réseaux sociaux.
+        </p>
+      </div>
+    </div>
+
+  </section>
+  <section class="social-contact">
+  <h2>Suivez-nous sur les réseaux sociaux</h2>
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+  </div>
+
+  <h2>Contactez-nous par message</h2>
+  <form class="contact-form" #form="ngForm" (ngSubmit)="envoyerMessage()">
+    <input type="text" placeholder="Votre nom" required>
+    <input type="email" placeholder="Votre email" required>
+    <textarea placeholder="Votre message ou question..." rows="5" required></textarea>
+    <button type="submit"  >Envoyer</button>
+  </form>
+  <div *ngIf="messageEnvoye" class="confirmation-message">
+     Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.
+  </div>
+</section>
