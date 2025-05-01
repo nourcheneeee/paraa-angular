@@ -1,0 +1,26 @@
+<div class="admin-container">
+    <aside class="sidebar">
+      <div class="admin-user-info">
+        <img src="assets/user-admin.svg" alt="Admin Avatar" class="admin-avatar" />
+        <p class="admin-email">{{ adminEmail }}</p>
+        <button (click)="goTohomeclient()">Se déconnecter</button>
+      </div>
+      
+    
+      <h2>Admin</h2>
+      <ul>
+        <li><a (click)="goTohome()">Dashboard</a></li>
+        <li><a (click)="goToclients()">Gestion des Clients</a></li>
+        <li><a (click)="goToProducts()">Gestion des Produits</a></li>
+        <li><a (click)="goTocarts()">Gestion des Paniers</a></li>
+      </ul>
+    </aside>
+  
+    <main class="dashboard-content">
+      <h1>Tableau de bord</h1>
+      <div class="visuals-section">
+        <iframe title="interfaceadmin" width="1200" height="660" src="https://app.powerbi.com/view?r=eyJrIjoiMzc4MjQwMDEtMjlkMi00ZDA0LTk1M2YtYzlhMTRhMTg0Mjg3IiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+      </div>
+    </main>
+  </div>
+  

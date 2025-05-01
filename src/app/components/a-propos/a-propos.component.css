@@ -1,0 +1,65 @@
+.about {
+    padding: 40px;
+    background-color: #f3f7f2;
+    color: #333;
+    text-align: center;
+    height: 700px;
+  }
+  
+  .about h2 {
+    font-size: 2.3em;
+    margin-bottom: 40px;
+    color: #638c65;
+  }
+  
+  .intro {
+    font-size: 1.2em;
+    width: 1000px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .about-map {
+    width: 490px;
+    height: 360px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 100px
+  }
+  
+  
+  .about-text {
+    max-width: 550px;
+    text-align: left;
+padding: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+
+    background-color: #dce9d9;
+  }
+  
+  .about-text h3 {
+    margin-top: 0;
+    color: #06270e;
+    text-align: center;
+  }
+  
+  .about-text ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .about-text li {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  

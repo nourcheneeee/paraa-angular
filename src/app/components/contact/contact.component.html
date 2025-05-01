@@ -1,0 +1,44 @@
+<section class="contact-page">
+    <h1>Contactez-nous</h1>
+  
+    <section class="contact-infos">
+      <h2>Nos coordonnées</h2>
+      <ul>
+        <li><strong>Adresse :</strong> Avenue Habib Bourguiba, Tunis, Tunisie</li>
+        <li><strong>Téléphone :</strong> +216 12 345 678</li>
+        <li><strong>Email :</strong> contact|a|para-dis.tn</li>
+        <li><strong>Horaires :</strong> Lundi à Samedi : 8h - 20h</li>
+      </ul>
+    </section>
+  
+    <section class="faq">
+      <h2>Questions fréquentes</h2>
+      <ul>
+        <li><strong>Quels types de produits proposez-vous ?</strong><br> Des produits dermocosmétiques, hygiène, nutrition, etc.</li>
+        <li><strong>Livrez-vous partout en Tunisie ?</strong><br> Oui, sous 48h ouvrées.</li>
+        <li><strong>Comment suivre ma commande ?</strong><br> Via votre compte client ou email de confirmation.</li>
+      </ul>
+    </section>
+  
+    <section class="social-contact">
+      <h2>Suivez-nous sur les réseaux sociaux</h2>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    
+      <h2>Contactez-nous par message</h2>
+      <form class="contact-form" #form="ngForm" (ngSubmit)="envoyerMessage()">
+        <input type="text" placeholder="Votre nom" required>
+        <input type="email" placeholder="Votre email" required>
+        <textarea placeholder="Votre message ou question..." rows="5" required></textarea>
+        <button type="submit"  >Envoyer</button>
+      </form>
+      <div *ngIf="messageEnvoye" class="confirmation-message">
+         Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.
+      </div>
+    </section>
+    
+  </section>
+  

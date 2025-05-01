@@ -1,0 +1,28 @@
+<div class="cart-page">
+    <h2>Votre Panier</h2>
+  
+    <div *ngIf="panierItems.length === 0">Le panier est vide.</div>
+  
+    <div *ngFor="let item of panierItems; let i = index" class="cart-item">
+      <div class="item-info">
+        <p class="item-name">{{ item.name }}</p>
+        <p class="item-price">Prix ;{{ item.price }} DT</p>
+        <p class="item-quantity">
+          Quantité :
+          <button (click)="decreaseQuantity(i)">-</button>
+          {{ item.quantity }}
+          <button (click)="increaseQuantity(i)">+</button>
+        </p>
+        <button class="remove-btn" (click)="removeItem(i)">Supprimer</button>
+      </div>
+  
+      <div class="item-photo">
+        <img [src]="item.photoUrl" alt="Photo du produit" />
+      </div>
+    </div>
+    <div  class="t">
+    <p class="total" >Le total du panier :{{totalPanier()}} DT</p>
+
+    <button class="validate-btn" (click)="validerPanier()">Valider le Panier</button></div>
+  </div>
+  

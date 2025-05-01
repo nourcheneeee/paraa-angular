@@ -1,0 +1,109 @@
+/* Sidebar Styling */
+.admin-container {
+    display: flex;
+    height: 800px; /* Full height of the viewport */
+   
+  }
+  
+  .sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #638c65;
+    border-right: 1px solid #ddd;
+  }
+  
+  .admin-user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 80px;
+    border: 1px solid #25852f;
+    padding: 15px;
+    background-color: #7aa77c;
+    border-radius: 10px;
+    box-shadow: 0 4px 9px rgba(181, 233, 181, 0.1);
+  }
+  
+  .admin-user-info button:hover {
+    background-color: #1f5a32;
+  }
+  .admin-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .admin-email {
+    font-size: 20px;
+    color: #eeeeee;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Link styling */
+  .sidebar h2 {
+    font-size: 18px;
+    color: #8fc5a3;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 19px;
+    transition: color 0.3s;
+    cursor: pointer;
+
+    border-radius: 8px;
+    border: 1px solid #133d13 ; /* Add a transparent border for hover effect */
+    padding: 5px 10px; /* Add some padding for better click area */
+background-color: #7aa77c;
+  }
+  
+  .sidebar a:hover {
+    color: #e4e4e4;
+  }
+  
+  /* Main Content */
+  .dashboard-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+  
+    width: 1000px;
+  }
+  iframe {
+  
+    border: none; 
+    overflow: hidden;
+  }
+  h1{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }.visuals-section {
+    width: 100%;
+    height: 600px; /* Adjust the height to fit your layout */
+    overflow: hidden; /* Hide any overflow */
+  }  .admin-user-info button {
+    padding: 8px 18px;
+    background-color: #256d3e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: inset;
+  }
